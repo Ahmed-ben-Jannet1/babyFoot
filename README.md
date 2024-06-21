@@ -29,6 +29,7 @@ npm install
 ```
 
 2. **Set up environment variables**
+   Change the DB_NAME and the DB_PASS
 
 3. **Set up the PostgreSQL database**
 
