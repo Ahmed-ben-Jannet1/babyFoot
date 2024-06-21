@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babyfoot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <h1 class="header">BabyFoot Manager</h1>
+        <div class="create-game">
+          <input type="text" id="namePrem" placeholder="First Player Name" />
+          <input type="text" id="nameSec" placeholder="Second Player Name" />
+          <button id="createGame">Create Game</button>
+          <div id="error" class="error"></div>
+        </div>
+        <div class="game-list">
+          <div class="counter" id="unfinishedCounter">0</div>
+          <div id="games"></div>
+        </div>
+      </div>
+      <div class="chat-box">
+        <h1 class="header">Chat</h1>
+        <input type="text" id="chatName" placeholder="Your Name" />
+        <div class="messages" id="messages"></div>
+        <textarea
+          id="chatMessage"
+          placeholder="Type your message..."
+        ></textarea>
+        <button id="sendMessage">Send</button>
+      </div>
+    </div>
+    <script src="websocket.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
